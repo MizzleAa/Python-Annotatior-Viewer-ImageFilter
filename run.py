@@ -20,7 +20,7 @@ class Test16BitContainer:
         #algorithm end
         container_save(image, options={"file_name":"sharp_blur"})
         
-    def test_reverse():
+    def test_reverse(self):
         image = container_load()
         #algorithm start
         image = self.image_filter.bit16.reverse(image)
@@ -60,7 +60,7 @@ class Test8BitPolice:
         #algorithm end
         police_save(image, options={"file_name":"sharp_blur"})
         
-    def test_reverse():
+    def test_reverse(self):
         image = police_load()
         #algorithm start
         image = self.image_filter.bit8.reverse(image)
@@ -85,4 +85,3 @@ class Test8BitPolice:
 if __name__ == '__main__':
     test_8bit_police =  Test8BitPolice()
     test_8bit_police.test_bright_dark()
-    pass
